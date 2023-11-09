@@ -1,0 +1,360 @@
+{
+  "logicalTable" : {
+    "name" : "CUSTOMERS_SH",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "CUST_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_FIRST_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_FIRST_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_LAST_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_LAST_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_GENDER",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_GENDER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_YEAR_OF_BIRTH",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_YEAR_OF_BIRTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_MARITAL_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_STREET_ADDRESS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_STREET_ADDRESS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_POSTAL_CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_POSTAL_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_CITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_CITY_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_CITY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_STATE_PROVINCE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_STATE_PROVINCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_STATE_PROVINCE_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_STATE_PROVINCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.COUNTRY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_MAIN_PHONE_NUMBER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_MAIN_PHONE_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_INCOME_LEVEL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_INCOME_LEVEL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_CREDIT_LIMIT",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_CREDIT_LIMIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "CUST_EMAIL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_TOTAL_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_TOTAL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_SRC_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_SRC_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_EFF_FROM",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_EFF_FROM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_EFF_TO",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_EFF_TO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_VALID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CUSTOMERS_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH.CUST_VALID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "CONCAT(%1 , %2 )",
+          "expressionObjects" : [ "logicalColumn:Logical_customers.CUSTOMERS_SH.CUST_FIRST_NAME", "logicalColumn:Logical_customers.CUSTOMERS_SH.CUST_LAST_NAME" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CUSTOMERS_SH",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DS_CUSTOMERS.ADWUSER.CUSTOMERS_SH" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Logical_customers.SALES_SH",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

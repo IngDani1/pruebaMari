@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "Presentacion_sales_ODI",
+    "sourceBusinessModel" : "businessModel:Logical_customers",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Presentacion_sales_ODI.CUSTOMERS_SH"
+    }, {
+      "name" : "presentationTable:Presentacion_sales_ODI.SALES_SH"
+    } ]
+  }
+}

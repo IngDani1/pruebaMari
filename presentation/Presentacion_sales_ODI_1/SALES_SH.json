@@ -1,0 +1,27 @@
+{
+  "presentationTable" : {
+    "name" : "SALES_SH",
+    "presentationColumns" : [ {
+      "name" : "PROD_ID",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.PROD_ID"
+    }, {
+      "name" : "CUST_ID",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.CUST_ID"
+    }, {
+      "name" : "TIME_ID",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.TIME_ID"
+    }, {
+      "name" : "CHANNEL_ID",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.CHANNEL_ID"
+    }, {
+      "name" : "PROMO_ID",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.PROMO_ID"
+    }, {
+      "name" : "QUANTITY_SOLD",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.QUANTITY_SOLD"
+    }, {
+      "name" : "AMOUNT_SOLD",
+      "sourceLogicalColumn" : "logicalColumn:Logical_customers.SALES_SH.AMOUNT_SOLD"
+    } ]
+  }
+}

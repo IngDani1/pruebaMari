@@ -1,0 +1,120 @@
+{
+  "logicalTable" : {
+    "name" : "SALES_SH",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "PROD_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.PROD_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.CUST_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TIME_ID",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.TIME_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CHANNEL_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.CHANNEL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.PROMO_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "QUANTITY_SOLD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.QUANTITY_SOLD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "AMOUNT_SOLD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES_SH",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DS_CUSTOMERS.ADWUSER.SALES_SH.AMOUNT_SOLD" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SALES_SH",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DS_CUSTOMERS.ADWUSER.SALES_SH" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "CUST_ID" ]
+  }
+}
